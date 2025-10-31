@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SOS Mechanics – Mobile Car Repairs</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: #000;
+            font-family: Arial, sans-serif;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 900px;
+            padding: 20px;
+            animation: fadeIn 1.2s ease forwards;
+            opacity: 0;
+        }
+
+        @keyframes fadeIn {
+            to { opacity: 1; }
+        }
+
+        /* Premium glass hero */
+        .hero {
+            text-align: center;
+            padding: 45px 25px;
+            backdrop-filter: blur(20px);
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 25px;
+            margin-bottom: 35px;
+            box-shadow: 0 0 25px rgba(255,0,0,0.15);
+            transform: translateY(0);
+            transition: 0.4s;
+        }
+
+        .hero:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 0 35px rgba(255,0,0,0.35);
+        }
+
+        h1 {
+            font-size: 42px;
+            color: #ff0000;
+            margin-bottom: 10px;
+            letter-spacing: 1px;
+        }
+
+        p {
+            font-size: 18px;
+            color: #ccc;
+            line-height: 1.6;
+        }
+
+        /* Premium call button */
+        .cta-btn {
+            display: inline-block;
+            margin-top: 28px;
+            padding: 15px 32px;
+            font-size: 21px;
+            background: linear-gradient(135deg, #ff0000, #aa0000);
+            color: #fff;
+            border-radius: 12px;
+            text-decoration: none;
+            box-shadow: 0 0 18px rgba(255,0,0,0.4);
+            transition: 0.25s ease-in-out;
+        }
+
+        .cta-btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 25px rgba(255,0,0,0.65);
+        }
+
+        .services-title {
+            font-size: 30px;
+            margin: 25px 0 12px;
+            text-align: center;
+            color: #fff;
+            letter-spacing: 0.5px;
+        }
+
+        /* Service cards */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 22px;
+            margin-top: 20px;
+        }
+
+        .service-card {
+            background: rgba(255, 255, 255, 0.07);
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            backdrop-filter: blur(14px);
+            border-radius: 15px;
+            padding: 22px;
+            text-align: center;
+            transition: 0.3s;
+            box-shadow: 0 0 12px rgba(255,0,0,0.20);
+        }
+
+        .service-card:hover {
+            transform: translateY(-6px);
+            background: rgba(255,0,0,0.18);
+            border-color: #ff0000;
+            box-shadow: 0 0 25px rgba(255,0,0,0.45);
+        }
+
+        .service-card h3 {
+            font-size: 24px;
+            color: #ff0000;
+            margin-bottom: 12px;
+        }
+
+        .service-card p {
+            font-size: 16px;
+            color: #e0e0e0;
+        }
+
+        /* Sticky call bar for mobile */
+        .sticky-call {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background: rgba(255, 0, 0, 0.9);
+            text-align: center;
+            padding: 14px 0;
+            font-size: 20px;
+            color: #fff;
+            text-decoration: none;
+            box-shadow: 0 -4px 25px rgba(255,0,0,0.6);
+            display: none;
+        }
+
+        @media(max-width: 700px) {
+            .sticky-call {
+                display: block;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="hero">
+            <h1>SOS Mechanics</h1>
+            <p>Premium mobile mechanic service covering Medway, Kent.<br>
+               Fast response, emergency repairs, diagnostics and maintenance wherever you are.</p>
+            <a href="tel:07405937104" class="cta-btn">Call Now: 07405 937104</a>
+        </div>
+
+        <div class="services-title">Our Services</div>
+
+        <div class="services-grid">
+
+            <div class="service-card">
+                <h3>Emergency Repairs</h3>
+                <p>Breakdowns, no-starts and urgent issues handled on the spot.</p>
+            </div>
+
+            <div class="service-card">
+                <h3>Diagnostics</h3>
+                <p>Professional fault scanning and troubleshooting using modern tools.</p>
+            </div>
+
+            <div class="service-card">
+                <h3>Mobile Servicing</h3>
+                <p>Full servicing at home or work — oil, filters and inspection.</p>
+            </div>
+
+            <div class="service-card">
+                <h3>Brakes & Suspension</h3>
+                <p>Discs, pads, shocks, suspension and steering components.</p>
+            </div>
+
+            <div class="service-card">
+                <h3>Battery Services</h3>
+                <p>Testing, jump-starting and full battery replacement.</p>
+            </div>
+
+            <div class="service-card">
+                <h3>Recovery-Style Assistance</h3>
+                <p>Help for stranded cars without needing a tow truck.</p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <a class="sticky-call" href="tel:07405937104">📞 Call SOS Mechanics</a>
+
+</body>
+</html>
