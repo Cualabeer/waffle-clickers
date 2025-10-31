@@ -17,7 +17,6 @@ body { background: linear-gradient(180deg,#fdfdfd 0%,#f0f0f0 100%); color:#000; 
   transition: background-position 0.2s ease-out;
 }
 
-/* Hero overlay for teal tint separation */
 .hero::before {
   content: "";
   position: absolute;
@@ -26,7 +25,6 @@ body { background: linear-gradient(180deg,#fdfdfd 0%,#f0f0f0 100%); color:#000; 
   z-index:1;
 }
 
-/* Hero bottom gradient fade into main content */
 .hero::after {
   content: "";
   position: absolute;
@@ -34,15 +32,12 @@ body { background: linear-gradient(180deg,#fdfdfd 0%,#f0f0f0 100%); color:#000; 
   left: 0;
   width: 100%;
   height: 80px;
-  background: linear-gradient(to bottom, rgba(0,128,128,0.0), rgba(240,240,240,1)); /* fade to body */
+  background: linear-gradient(to bottom, rgba(0,128,128,0.0), rgba(240,240,240,1));
   z-index:2;
   pointer-events: none;
 }
 
-.hero-overlay {
-  position: relative;
-  z-index:2;
-}
+.hero-overlay { position: relative; z-index:2; }
 
 .hero h1 { font-size:3rem; color:#FFD700; margin-bottom:20px; }
 .hero p { font-size:1.3rem; max-width:600px; margin-bottom:25px; }
@@ -60,11 +55,7 @@ body { background: linear-gradient(180deg,#fdfdfd 0%,#f0f0f0 100%); color:#000; 
   transition:all 0.3s ease;
 }
 
-.cta-btn:hover { 
-  background:#00a651; /* teal hover */
-  color:#fff; 
-  transform:scale(1.05);
-}
+.cta-btn:hover { background:#00a651; color:#fff; transform:scale(1.05); }
 
 /* ===== LOGO FLOAT ===== */
 @keyframes float { 0%{transform:translateY(0);}50%{transform:translateY(-8px);}100%{transform:translateY(0);} }
@@ -87,16 +78,14 @@ html { scroll-behavior:smooth; }
   border-radius:16px;
   cursor:pointer;
   transition:transform 0.3s ease, box-shadow 0.3s ease, border-left 0.3s ease;
-  border-left:4px solid #FFD700; /* gold */
+  border-left:4px solid #FFD700;
 }
-
 .service-card h2 { color:#FFD700; margin-bottom:10px; font-size:1.4rem; }
 .service-card p { color:#000; font-size:1rem; }
-
 .service-card:hover {
   transform:translateY(-5px) scale(1.03);
-  box-shadow:0 15px 25px rgba(255,215,0,0.55); /* gold shadow */
-  border-left:4px solid #00a651; /* teal hover */
+  box-shadow:0 15px 25px rgba(255,215,0,0.55);
+  border-left:4px solid #00a651;
 }
 
 /* ===== INTRO / TRUST ===== */
@@ -107,7 +96,7 @@ html { scroll-behavior:smooth; }
 footer {
   padding:20px;
   text-align:center;
-  background:#2a2a2a; /* dark grey */
+  background:#2a2a2a;
   color:#fff;
 }
 .footer-container { display:flex; flex-wrap:wrap; justify-content:space-between; margin-bottom:20px; }
@@ -115,7 +104,7 @@ footer {
 .footer-column h3 { color:#FFD700; margin-bottom:10px; }
 .footer-column ul { list-style:none; }
 .footer-column ul li a { text-decoration:none; color:#fff; transition:color 0.3s ease; }
-.footer-column ul li a:hover { color:#00a651; } /* teal hover */
+.footer-column ul li a:hover { color:#00a651; }
 .footer-bottom { border-top:1px solid #FFD700; padding-top:10px; font-size:0.9rem; }
 
 /* ===== STICKY CALL BUTTON ===== */
@@ -134,7 +123,7 @@ footer {
   transition:all 0.3s ease;
 }
 .sticky-call:hover {
-  background:#00a651; /* teal hover */
+  background:#00a651;
   color:#fff;
   transform:scale(1.05);
 }
