@@ -1,6 +1,11 @@
 /* ===== RESET ===== */
 * { margin:0; padding:0; box-sizing:border-box; font-family:'Inter',sans-serif; }
-body { background:#000; color:#fff; line-height:1.6; font-size:1rem; }
+body { 
+  background: linear-gradient(180deg, #f8f8f8 0%, #e0e0e0 100%); /* soft gradient */
+  color: #000; 
+  line-height:1.6; 
+  font-size:1rem; 
+}
 
 /* Skip link */
 .skip-link { position:absolute; top:-40px; left:0; background:#FFD700; color:#000; padding:8px; z-index:100; }
@@ -14,13 +19,14 @@ body { background:#000; color:#fff; line-height:1.6; font-size:1rem; }
   position:relative;
 }
 .hero-overlay {
-  background: rgba(0,0,0,0.6);
+  background: rgba(255, 255, 255, 0.15); /* bright glassy overlay */
   width:100%; height:100%;
   display:flex; flex-direction:column; justify-content:center; align-items:center; text-align:center;
   padding:60px 20px;
+  color: #000;
 }
 .hero-overlay h1 { font-size:3rem; color:#FFD700; margin-bottom:20px; font-weight:bold; }
-.hero-overlay p { font-size:1.2rem; color:#fff; margin-bottom:30px; max-width:600px; }
+.hero-overlay p { font-size:1.2rem; color:#000; margin-bottom:30px; max-width:600px; }
 
 /* CTA BUTTONS */
 .cta-btn, .sticky-call {
@@ -36,33 +42,50 @@ body { background:#000; color:#fff; line-height:1.6; font-size:1rem; }
 /* Hover & focus effects */
 .cta-btn:hover, .cta-btn:focus,
 .sticky-call:hover, .sticky-call:focus {
-  background: #00a651; /* hi-vis green accent */
+  background: #00a651; /* green accent */
   color: #fff;
-  transform: scale(1.05); /* slight zoom */
-  box-shadow: 0 8px 25px rgba(255, 215, 0, 0.6); /* hi-vis glowing shadow */
+  transform: scale(1.05); 
+  box-shadow: 0 8px 25px rgba(255, 215, 0, 0.6);
   outline: none;
 }
 
 /* SERVICES GRID */
 .services-grid { display:grid; grid-template-columns:1fr; gap:25px; padding:40px 20px; }
 .service-card {
-  background: rgba(0,0,0,0.5); border-radius:20px; padding:25px; text-align:center;
-  border-left:4px solid #FFD700; transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background: rgba(255, 255, 255, 0.15); /* light glassy */
+  border-left:4px solid #FFD700;
+  border-radius:20px;
+  padding:25px;
+  text-align:center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  color: #000;
 }
 .service-card h2 { color:#FFD700; margin-bottom:12px; font-size:1.4rem; }
-.service-card p { color:#fff; }
+.service-card p { color:#000; }
 .service-card:hover, .service-card:focus {
-  transform:translateY(-5px);
-  box-shadow:0 12px 25px rgba(255,215,0,0.4);
+  transform:translateY(-5px) scale(1.02);
+  box-shadow:0 15px 30px rgba(255,215,0,0.5);
+  border-left: 4px solid #00a651;
+  cursor: pointer;
 }
 
+/* INTRO & TRUST MESSAGES */
+.intro, .trust-message {
+  padding:40px 20px;
+  max-width:1000px;
+  margin:0 auto;
+  text-align:center;
+}
+.intro h2, .trust-message h2 { color:#FFD700; margin-bottom:20px; }
+.intro p, .trust-message p { color:#000; font-size:1.1rem; }
+
 /* FOOTER */
-footer { background: rgba(0,0,0,0.85); padding:40px 20px; font-size:0.95rem; }
+footer { background: rgba(255,255,255,0.1); padding:40px 20px; font-size:0.95rem; color:#000; }
 .footer-container { display:flex; flex-direction:column; gap:25px; max-width:1200px; margin:0 auto; }
 .footer-column h3 { color:#FFD700; font-size:1.2rem; margin-bottom:10px; }
 .footer-column ul { list-style:none; padding-left:0; margin:0; }
 .footer-column li { margin-bottom:8px; }
-.footer-column a { color:#fff; text-decoration:none; }
+.footer-column a { color:#000; text-decoration:none; }
 .footer-column a:hover, .footer-column a:focus { color:#FFD700; text-decoration:underline; }
 .footer-bottom { border-top:1px solid #FFD700; padding-top:15px; text-align:center; font-size:0.85rem; }
 
