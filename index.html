@@ -49,13 +49,13 @@
 <main id="main">
 
 <!-- ✅ INTRO -->
-<section class="intro">
+<section class="intro fade-up">
   <h2>Precision Mobile Car Repairs, Delivered</h2>
   <p>We fix most vehicles on-site, providing dealership-grade quality without the dealership hassle. Your car stays moving — wherever you are in Medway or Kent.</p>
 </section>
 
 <!-- ✅ SERVICES GRID -->
-<section class="services-grid">
+<section class="services-grid fade-up">
   <div class="service-card">
     <h2>Mobile Diagnostics</h2>
     <p>We come to your location with advanced diagnostic tools to quickly find and fix car problems on-site.</p>
@@ -75,7 +75,7 @@
 </section>
 
 <!-- ✅ WHY CHOOSE US -->
-<section class="why-choose">
+<section class="why-choose fade-up">
   <h2>Why Choose SOS Mechanics</h2>
   <div class="usp-cards">
     <div class="usp-card">
@@ -94,7 +94,7 @@
 </section>
 
 <!-- ✅ TESTIMONIALS -->
-<section class="testimonials">
+<section class="testimonials fade-up">
   <h2>What Our Customers Say</h2>
   <div class="testimonial-card">
     <p>"SOS Mechanics came to my home and fixed my car in under an hour. Incredible service!"</p>
@@ -107,7 +107,7 @@
 </section>
 
 <!-- ✅ GALLERY -->
-<section class="gallery">
+<section class="gallery fade-up">
   <h2>Recent Work</h2>
   <div class="gallery-grid">
     <img src="assets/images/brakes.jpg" alt="Brake Repair">
@@ -117,7 +117,7 @@
 </section>
 
 <!-- ✅ FAQ -->
-<section class="faq">
+<section class="faq fade-up">
   <h2>Frequently Asked Questions</h2>
   <div class="faq-item">
     <h3>Do you use OEM parts?</h3>
@@ -130,7 +130,7 @@
 </section>
 
 <!-- ✅ CALL TO ACTION -->
-<section class="cta-section">
+<section class="cta-section fade-up">
   <h2>Need a Mobile Mechanic Now?</h2>
   <a href="tel:07405937104" class="cta-btn">Call SOS Mechanics — Immediate Response</a>
 </section>
@@ -174,7 +174,7 @@
 <!-- ✅ Sticky Call Button -->
 <a href="tel:07405937104" class="sticky-call">Call SOS Now</a>
 
-<!-- ✅ JS for frictionless scroll -->
+<!-- ✅ JS for frictionless scroll + fade-up -->
 <script>
 const hero = document.querySelector('.hero');
 const mainSection = document.getElementById('main');
@@ -198,6 +198,19 @@ window.addEventListener('scroll', () => {
   const scrollPos = window.scrollY;
   hero.style.backgroundPosition = `center ${scrollPos * 0.3}px`;
 });
+
+// Scroll-triggered fade-up animations
+const faders = document.querySelectorAll('.fade-up');
+const appearOptions = { threshold: 0.2, rootMargin: "0px 0px -50px 0px" };
+const appearOnScroll = new IntersectionObserver((entries, observer) => {
+  entries.forEach(entry => {
+    if(entry.isIntersecting){
+      entry.target.classList.add('visible');
+      observer.unobserve(entry.target);
+    }
+  });
+}, appearOptions);
+faders.forEach(fader => { appearOnScroll.observe(fader); });
 </script>
 
 </body>
