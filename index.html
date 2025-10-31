@@ -209,7 +209,6 @@ const scrollToMain = () => {
 window.addEventListener('wheel', e => { if(e.deltaY>0) scrollToMain(); }, {passive:true});
 window.addEventListener('touchstart', scrollToMain, {passive:true});
 
-// Scroll-triggered fade-up animations
 const faders = document.querySelectorAll('.fade-up');
 const appearOptions = { threshold: 0.2, rootMargin: "0px 0px -50px 0px" };
 const appearOnScroll = new IntersectionObserver((entries, observer) => {
@@ -222,6 +221,3 @@ const appearOnScroll = new IntersectionObserver((entries, observer) => {
 }, appearOptions);
 faders.forEach(fader => { appearOnScroll.observe(fader); });
 </script>
-
-</body>
-</html>
