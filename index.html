@@ -1,107 +1,247 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SOS Mechanics – Mobile Mechanic Medway | Emergency Car Repairs Kent</title>
-    <meta name="description" content="SOS Mechanics provides premium mobile mechanic services in Medway, Kent. Emergency repairs, diagnostics, servicing, and breakdown assistance brought directly to your location.">
-    
-    <!-- Open Graph / Social -->
-    <meta property="og:title" content="SOS Mechanics – Mobile Mechanic Medway">
-    <meta property="og:description" content="Premium mobile car repairs, diagnostics, and servicing across Medway, Kent. Emergency support and vehicle recovery.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://sosmechanics.co.uk/">
-    <meta property="og:image" content="https://sosmechanics.co.uk/logo.png">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SOS Mechanics – Mobile Mechanic Medway | Emergency Car Repairs Kent</title>
+<meta name="description" content="SOS Mechanics provides premium mobile mechanic services in Medway, Kent. Emergency repairs, diagnostics, servicing, and breakdown assistance.">
 
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="SOS Mechanics – Mobile Mechanic Medway">
-    <meta name="twitter:description" content="Premium mobile car repairs, diagnostics, and servicing across Medway, Kent. Emergency support and vehicle recovery.">
-    <meta name="twitter:image" content="https://sosmechanics.co.uk/logo.png">
+<!-- Open Graph / Social -->
+<meta property="og:title" content="SOS Mechanics – Mobile Mechanic Medway">
+<meta property="og:description" content="Premium mobile car repairs, diagnostics, and servicing across Medway, Kent. Emergency support and vehicle recovery.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://sosmechanics.co.uk/">
+<meta property="og:image" content="https://sosmechanics.co.uk/logo.png">
 
-    <!-- JSON-LD Structured Data -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "AutomotiveBusiness",
-      "name": "SOS Mechanics",
-      "image": "https://sosmechanics.co.uk/logo.png",
-      "url": "https://sosmechanics.co.uk",
-      "telephone": "+447405937104",
-      "priceRange": "££",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "Medway, Kent",
-        "addressLocality": "Medway",
-        "addressRegion": "Kent",
-        "postalCode": "ME",
-        "addressCountry": "UK"
-      },
-      "areaServed": "Medway and surrounding areas",
-      "sameAs": []
-    }
-    </script>
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="SOS Mechanics – Mobile Mechanic Medway">
+<meta name="twitter:description" content="Premium mobile car repairs, diagnostics, and servicing across Medway, Kent. Emergency support and vehicle recovery.">
+<meta name="twitter:image" content="https://sosmechanics.co.uk/logo.png">
 
-    <style>
-        body {margin:0; padding:0; background:#000; font-family:Arial,sans-serif; color:#fff;}
-        .container {width:95%; max-width:900px; margin:auto; padding:20px;}
-        header {text-align:center; margin-bottom:30px;}
-        header h1 {font-size:42px; color:#ff0000; margin-bottom:10px; letter-spacing:1px;}
-        header p {font-size:18px; line-height:1.6; color:#ccc;}
-        .cta-btn {display:inline-block; margin-top:25px; padding:16px 32px; font-size:21px; background:linear-gradient(135deg,#ff0000,#aa0000); color:#fff; border-radius:12px; text-decoration:none; box-shadow:0 0 18px rgba(255,0,0,0.4); transition:0.25s;}
-        .cta-btn:hover {transform:scale(1.05); box-shadow:0 0 25px rgba(255,0,0,0.65);}
-        main {display:grid; grid-template-columns:1fr; gap:22px;}
-        @media(min-width: 420px){main{grid-template-columns:1fr 1fr;}}
-        section {background:rgba(255,255,255,0.06); backdrop-filter:blur(14px); border-radius:15px; padding:22px; transition:0.3s; box-shadow:0 0 12px rgba(255,0,0,0.2);}
-        section:hover {transform:translateY(-5px); background:rgba(255,0,0,0.18); border:1px solid #ff0000; box-shadow:0 0 25px rgba(255,0,0,0.45);}
-        section h2 {color:#ff0000; font-size:24px; margin-bottom:12px;}
-        section p {color:#e0e0e0; font-size:16px; line-height:1.4;}
-        .sticky-call {position:fixed; bottom:0; left:0; width:100%; background:rgba(255,0,0,0.9); text-align:center; padding:14px 0; font-size:20px; color:#fff; text-decoration:none; box-shadow:0 -4px 25px rgba(255,0,0,0.6); display:none;}
-        @media(max-width:700px){.sticky-call{display:block;}}
-    </style>
+<!-- JSON-LD Structured Data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "AutomotiveBusiness",
+  "name": "SOS Mechanics",
+  "image": "https://sosmechanics.co.uk/logo.png",
+  "url": "https://sosmechanics.co.uk",
+  "telephone": "+447405937104",
+  "priceRange": "££",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Medway, Kent",
+    "addressLocality": "Medway",
+    "addressRegion": "Kent",
+    "postalCode": "ME",
+    "addressCountry": "UK"
+  },
+  "areaServed": "Medway and surrounding areas",
+  "sameAs": []
+}
+</script>
+
+<style>
+/* Reset & body */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: Arial,sans-serif; background:#000; color:#fff; }
+
+/* Full-width hero */
+header.hero {
+    width: 100%;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255,255,255,0.04);
+    backdrop-filter: blur(16px);
+    border-bottom: 2px solid rgba(255,0,0,0.2);
+    text-align: center;
+    padding: 50px 20px;
+    box-shadow: 0 0 30px rgba(255,0,0,0.25);
+}
+header.hero h1 {
+    font-size: 48px;
+    color: #ff0000;
+    letter-spacing:1px;
+    margin-bottom: 15px;
+}
+header.hero p {
+    font-size:18px;
+    line-height:1.6;
+    color:#ccc;
+    max-width: 700px;
+    margin-bottom:25px;
+}
+header.hero .cta-btn {
+    display:inline-block;
+    padding:16px 36px;
+    font-size:21px;
+    background: linear-gradient(135deg,#ff0000,#aa0000);
+    color:#fff;
+    border-radius:12px;
+    text-decoration:none;
+    box-shadow:0 0 18px rgba(255,0,0,0.4);
+    transition:0.25s;
+}
+header.hero .cta-btn:hover {
+    transform:scale(1.05);
+    box-shadow:0 0 25px rgba(255,0,0,0.65);
+}
+
+/* Services grid */
+main {
+    display:grid;
+    grid-template-columns:1fr;
+    gap:22px;
+    max-width:900px;
+    margin: 40px auto;
+    padding:0 20px;
+}
+@media(min-width: 420px){
+    main { grid-template-columns: repeat(2, 1fr); }
+}
+section.service-card {
+    background: rgba(255,255,255,0.07);
+    backdrop-filter: blur(14px);
+    border-radius:15px;
+    padding:22px;
+    text-align:center;
+    transition:0.3s;
+    box-shadow:0 0 12px rgba(255,0,0,0.2);
+}
+section.service-card:hover {
+    transform:translateY(-5px);
+    background: rgba(255,0,0,0.18);
+    border:1px solid #ff0000;
+    box-shadow:0 0 25px rgba(255,0,0,0.45);
+}
+section.service-card h2 { font-size:24px; color:#ff0000; margin-bottom:12px; }
+section.service-card p { font-size:16px; color:#e0e0e0; line-height:1.4; }
+
+/* Sticky call bar */
+.sticky-call {
+    position:fixed;
+    bottom:0;
+    left:0;
+    width:100%;
+    background:rgba(255,0,0,0.9);
+    text-align:center;
+    padding:14px 0;
+    font-size:20px;
+    color:#fff;
+    text-decoration:none;
+    box-shadow:0 -4px 25px rgba(255,0,0,0.6);
+    z-index:999;
+    display:none;
+}
+@media(max-width:700px){ .sticky-call{display:block;} }
+
+/* Footer */
+footer {
+    width:100%;
+    background: rgba(0,0,0,0.85);
+    backdrop-filter: blur(12px);
+    color:#fff;
+    border-top:2px solid #ff0000;
+    box-shadow:0 -4px 25px rgba(255,0,0,0.3);
+    font-size:14px;
+}
+.footer-container {
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-between;
+    max-width:1000px;
+    margin:auto;
+    padding:30px 20px;
+}
+.footer-info, .footer-links, .footer-social {
+    flex:1 1 200px;
+    margin:10px;
+}
+.footer-info h3 { color:#ff0000; margin-bottom:10px; }
+.footer-links ul { list-style:none; padding:0; }
+.footer-links ul li { margin-bottom:8px; }
+.footer-links ul li a { color:#fff; text-decoration:none; transition:0.2s; }
+.footer-links ul li a:hover { color:#ff0000; }
+.footer-social a { margin-right:10px; display:inline-block; }
+.footer-social img { width:24px; height:24px; }
+.footer-bottom { text-align:center; padding:12px 20px; border-top:1px solid rgba(255,0,0,0.3); margin-top:20px; color:#ccc; }
+@media(max-width:700px){
+    .footer-container { flex-direction:column; text-align:center; }
+    .footer-info, .footer-links, .footer-social { margin:15px 0; }
+}
+</style>
 </head>
 
 <body>
-    <div class="container">
-        <header>
-            <h1>SOS Mechanics</h1>
-            <p>Premium mobile mechanic services across Medway, Kent. Emergency repairs, diagnostics, servicing, and recovery assistance delivered to your location.</p>
-            <a href="tel:07405937104" class="cta-btn">Call Now: 07405 937104</a>
-        </header>
 
-        <main>
-            <section>
-                <h2>Emergency Repairs</h2>
-                <p>Fast breakdown response and urgent car repairs wherever you are.</p>
-            </section>
+<!-- Hero Header -->
+<header class="hero">
+<h1>SOS Mechanics</h1>
+<p>Premium mobile mechanic services across Medway, Kent. Emergency repairs, diagnostics, servicing, and recovery assistance delivered to your location.</p>
+<a href="tel:07405937104" class="cta-btn">Call Now: 07405 937104</a>
+</header>
 
-            <section>
-                <h2>Diagnostics</h2>
-                <p>Comprehensive fault scanning to pinpoint and solve issues quickly.</p>
-            </section>
+<!-- Services -->
+<main>
+<section class="service-card">
+<h2>Emergency Repairs</h2>
+<p>Fast breakdown response and urgent car repairs wherever you are.</p>
+</section>
+<section class="service-card">
+<h2>Diagnostics</h2>
+<p>Comprehensive fault scanning to pinpoint and solve issues quickly.</p>
+</section>
+<section class="service-card">
+<h2>Mobile Servicing</h2>
+<p>Oil, filters, inspections, and servicing directly at your home or workplace.</p>
+</section>
+<section class="service-card">
+<h2>Brakes & Suspension</h2>
+<p>Repairs and replacements on brakes, discs, pads, shocks, and suspension components.</p>
+</section>
+<section class="service-card">
+<h2>Battery Services</h2>
+<p>Battery testing, jump-starts, and replacements on the spot.</p>
+</section>
+<section class="service-card">
+<h2>Recovery Assistance</h2>
+<p>Light vehicle recovery services for non-starting or stranded cars.</p>
+</section>
+</main>
 
-            <section>
-                <h2>Mobile Servicing</h2>
-                <p>Oil, filters, inspections, and servicing directly at your home or workplace.</p>
-            </section>
+<!-- Footer -->
+<footer>
+<div class="footer-container">
+<div class="footer-info">
+<h3>SOS Mechanics</h3>
+<p>Mobile Mechanic Service – Medway, Kent</p>
+<p>📞 <a href="tel:07405937104">07405 937104</a></p>
+</div>
+<div class="footer-links">
+<h4>Quick Links</h4>
+<ul>
+<li><a href="#services">Services</a></li>
+<li><a href="#contact">Contact</a></li>
+<li><a href="#about">About</a></li>
+</ul>
+</div>
+<div class="footer-social">
+<h4>Follow Us</h4>
+<a href="#"><img src="facebook-icon.png" alt="Facebook" /></a>
+<a href="#"><img src="instagram-icon.png" alt="Instagram" /></a>
+</div>
+</div>
+<div class="footer-bottom">
+<p>© 2025 SOS Mechanics. All rights reserved.</p>
+</div>
+</footer>
 
-            <section>
-                <h2>Brakes & Suspension</h2>
-                <p>Repairs and replacements on brakes, discs, pads, shocks, and suspension components.</p>
-            </section>
+<!-- Sticky Call Bar -->
+<a href="tel:07405937104" class="sticky-call">📞 Call SOS Mechanics</a>
 
-            <section>
-                <h2>Battery Services</h2>
-                <p>Battery testing, jump-starts, and replacements on the spot.</p>
-            </section>
-
-            <section>
-                <h2>Recovery Assistance</h2>
-                <p>Light vehicle recovery services for non-starting or stranded cars.</p>
-            </section>
-        </main>
-    </div>
-
-    <a href="tel:07405937104" class="sticky-call">📞 Call SOS Mechanics</a>
 </body>
 </html>
